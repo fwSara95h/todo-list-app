@@ -1,12 +1,14 @@
 # To-Do List Application
 
-A simple yet powerful To-Do List application built with Node.js, Express, and MongoDB. This application demonstrates CRUD operations in a RESTful API and offers both local and Dockerized deployment options.
+A very simple and basic To-Do List application built with Node.js, Express, and MongoDB. This application demonstrates CRUD operations in a RESTful API and offers both local and Dockerized deployment options.
 
 ## Features
 
 - Create, read, update, and delete to-do items.
 - Persistent storage with MongoDB Atlas.
 - Easy deployment with Docker.
+
+![Screenshot of Application](./Screenshot.png)
 
 ## Prerequisites
 
