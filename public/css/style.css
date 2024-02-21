@@ -1,13 +1,102 @@
+/* Reset some basic elements */
+body, h1, form, ul {
+  margin: 0;
+  padding: 0;
+}
+
 body {
-    font-family: Arial, sans-serif;
-  }
-  
-  form#new-todo-form, ul#todo-list {
-    max-width: 600px;
-    margin: 0 auto;
-  }
-  
-  input[type="text"] {
-    margin-right: 10px;
-  }
-  
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Form styling */
+form#new-todo-form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+form#new-todo-form input[type="text"] {
+  padding: 10px;
+  width: 300px;
+  margin-right: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+form#new-todo-form button {
+  padding: 10px 20px;
+  background-color: #5cb85c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form#new-todo-form button:hover {
+  background-color: #449d44;
+}
+
+/* Task list styling */
+ul#todo-list {
+  list-style-type: none;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+ul#todo-list li {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 10px 20px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+ul#todo-list li:last-child {
+  margin-bottom: 0;
+}
+
+/* Button styling in list */
+ul#todo-list li button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+ul#todo-list li button.delete-btn {
+  background-color: #d9534f;
+  color: white;
+}
+
+ul#todo-list li button.delete-btn:hover {
+  background-color: #c9302c;
+}
+
+ul#todo-list li button.toggle-btn {
+  background-color: #f0ad4e;
+  color: white;
+}
+
+ul#todo-list li button.toggle-btn:hover {
+  background-color: #ec971f;
+}
+
+/* Task completion styling */
+ul#todo-list li.completed {
+  text-decoration: line-through;
+  color: #777;
+}
