@@ -1,0 +1,13 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  form#new-todo-form, ul#todo-list {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  input[type="text"] {
+    margin-right: 10px;
+  }
+  
